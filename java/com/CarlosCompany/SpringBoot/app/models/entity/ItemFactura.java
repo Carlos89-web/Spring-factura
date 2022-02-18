@@ -11,8 +11,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-// Video 159, 175
-
 @Entity
 @Table(name = "facturas_items")
 public class ItemFactura implements Serializable {
