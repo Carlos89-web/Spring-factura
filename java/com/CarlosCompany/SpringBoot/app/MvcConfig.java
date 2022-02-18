@@ -7,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-// Video 149, 150
-
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
