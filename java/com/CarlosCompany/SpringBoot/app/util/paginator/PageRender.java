@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.data.domain.Page;
 
-//Vidoe 140: esta clase se encarga de hacer calculos con las páginas
 
 public class PageRender<T> {
 	
