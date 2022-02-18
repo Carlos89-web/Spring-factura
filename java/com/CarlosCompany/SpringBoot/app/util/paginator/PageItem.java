@@ -1,6 +1,5 @@
 package com.CarlosCompany.SpringBoot.app.util.paginator;
 
-// Video 140
 
 public class PageItem {
 	
