@@ -5,8 +5,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.CarlosCompany.SpringBoot.app.models.entity.Cliente;
 
-// Video 115, 120, 128, 129, 131, 139, 186
-
 // Heredamos de PagingAndSortingRepository, obtenemos todas las ventajas del CrudRepository
 // más las del PagingAndSortingRepository.
 
