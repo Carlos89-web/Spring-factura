@@ -27,8 +27,6 @@ import com.CarlosCompany.SpringBoot.app.models.entity.ItemFactura;
 import com.CarlosCompany.SpringBoot.app.models.entity.Producto;
 import com.CarlosCompany.SpringBoot.app.service.IClienteService;
 
-// Video 163, 176, 178
-
 @Controller
 @RequestMapping("/factura")
 @SessionAttributes("factura")
