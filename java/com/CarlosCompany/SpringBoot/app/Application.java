@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.CarlosCompany.SpringBoot.app.service.IUploadFileService;
 
-// Video 154
-
 @SpringBootApplication
 public class Application implements CommandLineRunner{
 
