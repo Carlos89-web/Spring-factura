@@ -22,8 +22,6 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-// Video 114, 121, 123, 179
-
 @Entity
 @Table(name = "clientes")
 public class Cliente implements Serializable {
