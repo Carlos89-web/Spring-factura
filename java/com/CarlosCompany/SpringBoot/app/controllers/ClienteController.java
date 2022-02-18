@@ -32,8 +32,6 @@ import com.CarlosCompany.SpringBoot.app.service.IClienteService;
 import com.CarlosCompany.SpringBoot.app.service.IUploadFileService;
 import com.CarlosCompany.SpringBoot.app.util.paginator.PageRender;
 
-// Video 116, 128, 129, 138, 146, 147, 150, 151, 152
-
 @Controller
 @SessionAttributes("cliente")
 public class ClienteController {
