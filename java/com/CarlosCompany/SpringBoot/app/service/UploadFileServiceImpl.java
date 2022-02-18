@@ -16,8 +16,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-// Video 153
-
 @Service
 public class UploadFileServiceImpl implements IUploadFileService {
 
