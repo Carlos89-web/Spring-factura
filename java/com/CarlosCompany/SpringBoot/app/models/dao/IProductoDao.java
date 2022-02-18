@@ -7,8 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.CarlosCompany.SpringBoot.app.models.entity.Producto;
 
-// Video 167
-
 public interface IProductoDao extends CrudRepository<Producto, Long>{
 
 	// ..like %?1% -> hacemos referencia al id
