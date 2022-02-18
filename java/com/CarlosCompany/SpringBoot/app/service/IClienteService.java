@@ -9,8 +9,6 @@ import com.CarlosCompany.SpringBoot.app.models.entity.Cliente;
 import com.CarlosCompany.SpringBoot.app.models.entity.Factura;
 import com.CarlosCompany.SpringBoot.app.models.entity.Producto;
 
-//Video 130, 139, 167, 174, 175, 178, 182, 185, 186
-
 public interface IClienteService {
 	
 	public List<Cliente> findAll();
