@@ -13,8 +13,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-// Video 160
-
 @Entity
 @Table(name="productos")
 public class Producto implements Serializable {
