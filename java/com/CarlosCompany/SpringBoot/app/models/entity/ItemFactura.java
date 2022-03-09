@@ -46,8 +46,6 @@ public class ItemFactura implements Serializable {
 		return cantidad.doubleValue()*producto.getPrecio();
 		
 	}
-	
-	// Video 175
 
 	public Producto getProducto() {
 		return producto;
@@ -56,8 +54,6 @@ public class ItemFactura implements Serializable {
 	public void setProducto(Producto producto) {
 		this.producto = producto;
 	}
-
-
 
 	private static final long serialVersionUID = 1L;
 
