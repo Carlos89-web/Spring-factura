@@ -55,8 +55,6 @@ public class ClienteServiceImpl implements IClienteService {
 		
 	}
 	
-	// Video 139
-
 	@Override
 	@Transactional(readOnly = true)
 	public Page<Cliente> findAll(Pageable pageable) {
@@ -71,8 +69,6 @@ public class ClienteServiceImpl implements IClienteService {
 		return productoDao.findByNombreLikeIgnoreCase("%"+term+"%");
 	}
 	
-	// Video 174
-
 	@Override
 	@Transactional
 	public void saveFactura(Factura factura) {
@@ -80,8 +76,6 @@ public class ClienteServiceImpl implements IClienteService {
 		facturaDao.save(factura);
 	}
 	
-	// Video 175
-
 	@Override
 	@Transactional(readOnly = true)
 	public Producto findProductoById(Long id) {
@@ -89,7 +83,7 @@ public class ClienteServiceImpl implements IClienteService {
 		return productoDao.findById(id).orElse(null);
 	}
 
-	// Video 178
+
 	
 	@Override
 	@Transactional(readOnly = true)
@@ -98,7 +92,6 @@ public class ClienteServiceImpl implements IClienteService {
 		return facturaDao.findById(id).orElse(null);
 	}
 	
-	// Video 182
 
 	@Override
 	@Transactional
@@ -107,7 +100,7 @@ public class ClienteServiceImpl implements IClienteService {
 		facturaDao.deleteById(id);
 	}
 	
-	// Video 185
+
 
 	@Override
 	@Transactional(readOnly = true)
@@ -116,7 +109,7 @@ public class ClienteServiceImpl implements IClienteService {
 		return facturaDao.fetchByIdWithClienteWithItemFacturaWithProducto(id);
 	}
 	
-	// Video 186
+
 
 	@Override
 	@Transactional(readOnly = true)
