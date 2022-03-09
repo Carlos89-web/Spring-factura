@@ -37,8 +37,6 @@ public class FacturaController {
 	
 	private final Logger log = LoggerFactory.getLogger(getClass());
 	
-	// Video 178
-	
 	@GetMapping("/ver/{id}")
 	public String ver(@PathVariable(value="id") Long id, Model model, RedirectAttributes flash) {
 
@@ -87,7 +85,7 @@ public class FacturaController {
 		return clienteService.findByNombre(term);
 	}
 
-	// Video 176
+
 	@PostMapping("/form")
 	public String guardar(@Valid Factura factura,
 			BindingResult result,
@@ -148,21 +146,4 @@ public class FacturaController {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
