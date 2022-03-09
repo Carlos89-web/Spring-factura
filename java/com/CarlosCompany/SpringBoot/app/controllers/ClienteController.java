@@ -42,8 +42,6 @@ public class ClienteController {
 	@Autowired
 	private IUploadFileService uploadFileService;
 
-	// Vidoe 147, 151
-
 	@GetMapping(value = "/uploads/{filename:.+}")
 	public ResponseEntity<Resource> verFoto(@PathVariable String filename) {
 
@@ -79,7 +77,7 @@ public class ClienteController {
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
 	public String listar(@RequestParam(name = "page", defaultValue = "0") int page, Model modelo) {
 
-		// Video 139
+
 
 		Pageable pageRequest = PageRequest.of(page, 5);
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
@@ -102,7 +100,6 @@ public class ClienteController {
 
 	}
 
-	// Video 128
 
 	@RequestMapping(value = "/form/{id}")
 	public String editar(@PathVariable(value = "id") Long id, Map<String, Object> model, RedirectAttributes flash) {
@@ -135,8 +132,6 @@ public class ClienteController {
 			return "form";
 		}
 
-		// Video 146, 150, 152, 153
-
 		if (!foto.isEmpty()) {
 
 			if (cliente.getId() != null && cliente.getId() > 0 && cliente.getFoto() != null
@@ -167,8 +162,6 @@ public class ClienteController {
 		flash.addFlashAttribute("success", "Cliente creado con éxito");
 		return "redirect:/listar";
 	}
-
-	// Video 129, 151, 152
 
 	@RequestMapping(value = "/eliminar/{id}")
 	public String eliminar(@PathVariable(value = "id") Long id, RedirectAttributes flash) {
