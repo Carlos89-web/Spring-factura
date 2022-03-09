@@ -46,7 +46,6 @@ public class Cliente implements Serializable {
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date createAt;
 	
-	// Video 158
 	@OneToMany(mappedBy="cliente", fetch = FetchType.LAZY, cascade=CascadeType.ALL)
 	private List<Factura> facturas; 
 	
@@ -123,8 +122,6 @@ public class Cliente implements Serializable {
 		
 	}
 
-	// Video 179
-	
 	@Override
 	public String toString() {
 		return nombre + " " + apellido;
